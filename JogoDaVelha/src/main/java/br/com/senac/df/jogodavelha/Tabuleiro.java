@@ -67,10 +67,27 @@ public class Tabuleiro {
     }
     
     public void verificarGanhador(char simbolo, int numeroJogador){
-     if(A3==simbolo && B2==simbolo && C1==simbolo);
-     else{
-     System.out.print("Jogador 1 ganhou");
-     }
+       if(A3 == simbolo && B2 == simbolo && C1 == simbolo) {
+           this.houveGanhadorUltimaRodada = true;
+       }
+    else if (A1 == simbolo && B1 == simbolo && C1 == simbolo) {
+        this.houveGanhadorUltimaRodada = true;
+    }else if (A2 == simbolo && A2 == simbolo && C2 == simbolo) {
+        this.houveGanhadorUltimaRodada = true;
+        
+    }else if (B3 == simbolo && B3 == simbolo && C3 == simbolo) {
+     this.houveGanhadorUltimaRodada = true;   
+    }else if (A1 == simbolo && B2 == simbolo && C3 == simbolo) {
+        this.houveGanhadorUltimaRodada = true;
+    }else if (C1 == simbolo && C2 == simbolo && C3 == simbolo) {
+        this.houveGanhadorUltimaRodada = true;
+    }else if (B1 == simbolo && B2 == simbolo && B3 == simbolo) {
+        this.houveGanhadorUltimaRodada = true;
+    }else if (A1 == simbolo && A2 == simbolo && A3 == simbolo) {
+        this.houveGanhadorUltimaRodada = true;
+    }else if (A1 == simbolo && B1 == simbolo && C1 == simbolo) {
+        this.houveGanhadorUltimaRodada = true;
+    }
     }
 
     public void organizarTabuleiro(){
@@ -106,7 +123,7 @@ public class Tabuleiro {
                 this.A3 = simbolo;
             break;
         case "B1":
-           this.B1 = simbolo; 
+           this.B1 = simbolo;          
             break;
         case "B2":
             this.B2 = simbolo;
