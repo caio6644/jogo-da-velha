@@ -88,6 +88,9 @@ public class Tabuleiro {
     }else if (A1 == simbolo && B1 == simbolo && C1 == simbolo) {
         this.houveGanhadorUltimaRodada = true;
     }
+       if (this.houveGanhadorUltimaRodada){
+       System.out.println("O jogador" + numeroJogador + "(" + simbolo + ") venceu o jogo!");
+       }
     }
 
     public void organizarTabuleiro(){
@@ -110,6 +113,8 @@ public class Tabuleiro {
                           |     |                      """, A1, B1, C1, A2, B2, C2, A3, B3, C3 );
     
     }
+    
+    
     
     public void marcarJogada(char simbolo, String coordenada){
     switch(coordenada){

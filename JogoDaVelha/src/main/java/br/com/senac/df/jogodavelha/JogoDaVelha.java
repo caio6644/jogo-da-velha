@@ -17,8 +17,8 @@ public class JogoDaVelha {
         
         Tabuleiro tabuleiro = new Tabuleiro("1-Cada jogador deve escolher um silbolo;" + "2 - O jogador 1 inicia a partida;");
         
-        Jogador jogador1 = new Jogador(1, "Bolsonaro", 'X');
-        Jogador jogador2 = new Jogador(2, "Lula", 'O');
+        Jogador jogador1 = new Jogador(1, "Caio", 'X');
+        Jogador jogador2 = new Jogador(2, "Adryan", 'O');
          
     
        do{
