@@ -13,7 +13,7 @@ public class Tabuleiro {
     private int notaJ1;
     private int notaJ2;
     private String regras;
-    private boolean houveGanhadorUltimaRodada;
+    public boolean houveGanhadorUltimaRodada;
     private int jogadorDaVez;
     private char  A1=' ', A2=' ', A3=' ', B1=' ', B2=' ', B3=' ', C1=' ', C2=' ', C3=' ';
     
@@ -114,30 +114,39 @@ public class Tabuleiro {
     public void marcarJogada(char simbolo, String coordenada){
     switch(coordenada){
         case "A1":
+        case  "a1":
                 this.A1 = simbolo;
             break;
         case "A2":
+        case  "a2":    
             this.A2 = simbolo;
             break;
         case "A3":
+        case  "a3":    
                 this.A3 = simbolo;
             break;
         case "B1":
+        case  "b1":    
            this.B1 = simbolo;          
             break;
-        case "B2":
+        case "B2": 
+        case  "b2":
             this.B2 = simbolo;
         break;
         case "B3":
+         case  "b3":    
             this.B3 = simbolo;
             break;
         case "C1":
+        case  "c1":    
             this.C1 = simbolo;
         break;
         case "C2":
+        case  "c2":    
             this.C2 = simbolo;
             break;
         case "C3":
+        case  "c3":    
             this.C3 = simbolo;
             break;     
             
